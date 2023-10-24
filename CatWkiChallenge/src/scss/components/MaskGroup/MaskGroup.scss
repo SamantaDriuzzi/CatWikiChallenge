@@ -1,0 +1,36 @@
+.container-logo-principal {
+  margin-left: 45px;
+}
+.container-mask-goup {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  .mask-group {
+    width: 1248px;
+    height: 686px;
+    background-image: url("../../../assets/mask.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    border-radius: 50px;
+    display: flex;
+    align-items: center;
+
+    .mask {
+      padding: 150px;
+    }
+
+    div {
+      width: 371px;
+      h2 {
+        color: #fff;
+        font-family: Montserrat;
+        font-size: 24px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: normal;
+      }
+    }
+  }
+}
