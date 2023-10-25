@@ -1,0 +1,64 @@
+.container-breeds-banner {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  .breeds-banner {
+    width: 1248px;
+    height: 686px;
+    border-bottom-left-radius: 50px;
+    border-bottom-right-radius: 50px;
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    justify-content: flex-start;
+    background-color: #e3e1dc;
+
+    .titulo-pequeño {
+      color: #291507;
+      font-size: 24px;
+      font-family: Montserrat;
+      font-weight: 500;
+
+      margin: 50px 0 20px 150px;
+    }
+
+    .barra-separadora {
+      width: 59.184px;
+      height: 3.209px;
+      background-color: #291507;
+      margin: 0 0 0 150px;
+    }
+    .titulo-grande {
+      width: 537px;
+      color: #291507;
+      font-family: Montserrat;
+      font-size: 58px;
+      font-style: normal;
+      font-weight: 700;
+      line-height: normal;
+      margin: 50px 0 0 150px;
+    }
+
+    .text-see-more {
+      color: rgba(41, 21, 7, 0.6);
+      text-align: right;
+      font-family: Montserrat;
+      font-size: 18px;
+      font-style: normal;
+      font-weight: 700;
+      line-height: normal;
+      margin-left: 85%;
+      display: flex;
+      align-items: center;
+    }
+
+    .rectangulo-diseño {
+      width: 47px;
+      height: 174px;
+      border-radius: 14px;
+      background: #ac7f0d;
+      margin: 90px 0 0 150px;
+    }
+  }
+}
