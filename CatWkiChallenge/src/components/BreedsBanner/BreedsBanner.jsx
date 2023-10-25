@@ -1,4 +1,4 @@
-import "../../../scss/components/BreedsBanner/BreedsBanner.scss";
+import "../../scss/components/BreedsBanner/BreedsBanner.scss";
 import BreedsCard from "./BreedsCard";
 
 const BreedsBanner = () => {
