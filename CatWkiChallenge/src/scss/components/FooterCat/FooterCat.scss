@@ -1,0 +1,33 @@
+.container-footer-banner {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  .footer-banner {
+    width: 1248px;
+    height: 90px;
+    border-top-left-radius: 50px;
+    border-top-right-radius: 50px;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    justify-content: space-around;
+    background-color: #000;
+
+    .titulo-pequeño {
+      color: #fff;
+      font-family: Montserrat;
+      font-size: 18px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: normal;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+
+      span {
+        font-weight: 900;
+      }
+    }
+  }
+}
