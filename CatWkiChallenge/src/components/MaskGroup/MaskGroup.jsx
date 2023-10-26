@@ -5,7 +5,7 @@ const MaskGroup = () => {
   return (
     <>
       <div className="container-logo-principal">
-        <LogoSVG fill={"#000000"} width={70} />
+        <LogoSVG fill={"#000000"} width={130} />
       </div>
       <div className="container-mask-goup">
         <div className="mask-group">
