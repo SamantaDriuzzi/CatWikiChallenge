@@ -1,0 +1,50 @@
+.breed-search-container {
+  text-align: center;
+
+  h2 {
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+  }
+
+  .search-container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+
+    .imput-container {
+      background-color: #f0f0f0;
+      border-radius: 49px;
+      width: 300px;
+      display: flex;
+      align-items: center;
+      justify-content: space-around;
+
+      .search-input {
+        padding: 8px;
+        background-color: #f0f0f0;
+        border-color: transparent;
+      }
+    }
+
+    .breed-list {
+      list-style: none;
+      padding: 0;
+      width: 300px;
+      max-height: 200px;
+      overflow-y: auto;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      background-color: #f0f0f0;
+
+      li {
+        cursor: pointer;
+        padding: 8px;
+        transition: background-color 0.3s ease;
+
+        &:hover {
+          background-color: #f0f0f0;
+        }
+      }
+    }
+  }
+}
