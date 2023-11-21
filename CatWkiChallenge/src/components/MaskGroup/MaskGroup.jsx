@@ -1,6 +1,8 @@
 import LogoSVG from "../../assets/LogoSVG";
 import "../../scss/components/MaskGroup/MaskGroup.scss";
 
+import BreedSearchComponent from "./BreedSearchComponent";
+
 const MaskGroup = () => {
   return (
     <>
@@ -10,9 +12,10 @@ const MaskGroup = () => {
       <div className="container-mask-goup">
         <div className="mask-group">
           <div className="mask">
-            <LogoSVG width={270} />
+            <LogoSVG width={300} />
             <div>
               <h2>Get to know more about your cat breed</h2>
+              <BreedSearchComponent />
             </div>
           </div>
         </div>
