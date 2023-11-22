@@ -11,3 +11,7 @@ export const getImagesByLimit = () => {
     `${theCatApi}/v1/images/search?&format=json&has_breeds=true&limit=4&api_key=live_KzrAHEr4d77u2rMB8750jSZpYI4OgKpHFKITJWucEIdqgGgMje2xcbkni2K34B8w`
   );
 };
+
+export const getImagesByBreeds = () => {
+  return axios.get(`${theCatApi}/v1/images/:image_id/breeds`);
+};

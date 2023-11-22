@@ -1,4 +1,7 @@
 import "../../scss/components/WhyBanner/WhyBanner.scss";
+import image1 from "../../assets/image1.jpg";
+import image2 from "../../assets/image2.jpg";
+import image3 from "../../assets/image3.jpg";
 const WhyBanner = () => {
   return (
     <div className="container-why-banner">
@@ -17,9 +20,15 @@ const WhyBanner = () => {
         </div>
 
         <div className="images-why-banner">
-          <div className="image-1"></div>
-          <div className="image-2"></div>
-          <div className="image-3"></div>
+          <div className="image-1">
+            <img src={image1} />
+          </div>
+          <div className="image-2">
+            <img src={image2} />
+          </div>
+          <div className="image-3">
+            <img src={image3} />
+          </div>
         </div>
       </div>
     </div>
