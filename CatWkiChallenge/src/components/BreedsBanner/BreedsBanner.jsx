@@ -13,8 +13,8 @@ const BreedsBanner = () => {
           <span className="material-symbols-outlined">trending_flat</span>
         </div>
         <div className="rectangulo-diseño"></div>
-        <BreedsCard />
       </div>
+      <BreedsCard />
     </div>
   );
 };
