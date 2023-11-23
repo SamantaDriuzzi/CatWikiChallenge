@@ -1,4 +1,4 @@
-import "../../scss/components/BreedsBanner/BreedsBanner.scss";
+import "../../../scss/components/home/BreedsBanner/BreedsBanner.scss";
 import BreedsCard from "./BreedsCard";
 
 const BreedsBanner = () => {
@@ -14,7 +14,7 @@ const BreedsBanner = () => {
         </div>
         <div className="rectangulo-diseño"></div>
       </div>
-      <BreedsCard />
+      <BreedsCard limit={4} />
     </div>
   );
 };

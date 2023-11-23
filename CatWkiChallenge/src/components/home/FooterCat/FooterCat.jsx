@@ -1,5 +1,5 @@
-import "../../scss/components/FooterCat/FooterCat.scss";
-import LogoSVG from "../../assets/LogoSVG";
+import "../../../scss/components/home/FooterCat/FooterCat.scss";
+import LogoSVG from "../../../assets/LogoSVG";
 
 const FooterCat = () => {
   return (

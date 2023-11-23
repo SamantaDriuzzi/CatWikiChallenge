@@ -1,6 +1,7 @@
 import { useState, useEffect, useCallback } from "react";
-import "../../scss/components/MaskGroup/BreedSearchComponent.scss";
-import { getRazas } from "../../API/searchBreeds";
+import "../../../scss/components/home/MaskGroup/BreedSearchComponent.scss";
+import { getRazas } from "../../../API/searchBreeds";
+import { Link } from "react-router-dom";
 
 function BreedSearchComponent() {
   const [breeds, setBreeds] = useState([]);
@@ -40,8 +41,8 @@ function BreedSearchComponent() {
         </div>
         <ul className="breed-list">
           {breeds.map((breed) => (
-            <li key={breed.id} onClick={() => setSearchValue(breed.name)}>
-              {breed.name}
+            <li key={breed.id}>
+              <Link to={`/breedInfoPage/${breed.id}`}>{breed.name}</Link>
             </li>
           ))}
         </ul>
