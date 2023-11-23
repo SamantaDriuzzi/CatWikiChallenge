@@ -1,5 +1,5 @@
-import LogoSVG from "../../assets/LogoSVG";
-import "../../scss/components/MaskGroup/MaskGroup.scss";
+import LogoSVG from "../../../assets/LogoSVG";
+import "../../../scss/components/home/MaskGroup/MaskGroup.scss";
 
 import BreedSearchComponent from "./BreedSearchComponent";
 

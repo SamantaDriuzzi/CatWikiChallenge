@@ -1,6 +1,7 @@
 import { useState, useEffect, useCallback } from "react";
-import "../../scss/components/BreedsBanner/BreedsCard.scss";
-import { getImagesByLimit } from "../../API/searchBreeds";
+import "../../../scss/components/home/BreedsBanner/BreedsCard.scss";
+import { getImagesByLimit } from "../../../API/searchBreeds";
+import { Link } from "react-router-dom";
 
 const BreedsCard = () => {
   const [breedImage, setBreedImage] = useState(null);
@@ -23,13 +24,15 @@ const BreedsCard = () => {
       {breedImage ? (
         breedImage.map((breed, index) => (
           <div key={index}>
-            <div className="image-card">
-              <img src={breed.url} alt={breed.breeds[0].name} />
-            </div>
+            <Link to={`/breedInfoPage/${breed.id}`}>
+              <div className="image-card">
+                <img src={breed.url} alt={breed.breeds[0].name} />
+              </div>
 
-            <div className="text-card" key={breed.breeds[0].id}>
-              {breed.breeds[0].name}
-            </div>
+              <div className="text-card" key={breed.breeds[0].id}>
+                {breed.breeds[0].name}
+              </div>
+            </Link>
           </div>
         ))
       ) : (

@@ -1,16 +1,14 @@
-import BreedsBanner from "./components/BreedsBanner/BreedsBanner";
-import FooterCat from "./components/FooterCat/FooterCat";
-import MaskGroup from "./components/MaskGroup/MaskGroup";
-import WhyBanner from "./components/WhyBanner/WhyBanner";
+import { BrowserRouter, Route, Routes } from "react-router-dom";
+import BreedInfoPage from "./components/breedInfoPage/breedInfoPage";
+import Home from "./components/home/home";
 
-const App = () => {
+export default function App() {
   return (
-    <div className="app">
-      <MaskGroup />
-      <BreedsBanner />
-      <WhyBanner />
-      <FooterCat />
-    </div>
+    <BrowserRouter>
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/breedInfoPage/:id" element={<BreedInfoPage />} />
+      </Routes>
+    </BrowserRouter>
   );
-};
-export default App;
+}
