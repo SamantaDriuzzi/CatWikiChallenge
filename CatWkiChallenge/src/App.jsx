@@ -7,7 +7,7 @@ export default function App() {
     <BrowserRouter>
       <Routes>
         <Route path="/" element={<Home />} />
-        <Route path="/breedInfoPage/:id" element={<BreedInfoPage />} />
+        <Route path="/breedInfoPage/:breedId" element={<BreedInfoPage />} />
       </Routes>
     </BrowserRouter>
   );

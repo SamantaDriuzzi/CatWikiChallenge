@@ -14,7 +14,7 @@ const BreedsBanner = () => {
         </div>
         <div className="rectangulo-diseño"></div>
       </div>
-      <BreedsCard />
+      <BreedsCard limit={4} />
     </div>
   );
 };

@@ -2,13 +2,14 @@ import { useState, useEffect, useCallback } from "react";
 import "../../../scss/components/home/BreedsBanner/BreedsCard.scss";
 import { getImagesByLimit } from "../../../API/searchBreeds";
 import { Link } from "react-router-dom";
+import PropTypes from "prop-types";
 
-const BreedsCard = () => {
+const BreedsCard = ({ limit }) => {
   const [breedImage, setBreedImage] = useState(null);
 
   const fetchBreedData = useCallback(async () => {
     try {
-      const response = await getImagesByLimit();
+      const response = await getImagesByLimit(limit);
       setBreedImage(response.data);
     } catch (error) {
       console.error("Error fetching cat breed data: ", error);
@@ -40,6 +41,9 @@ const BreedsCard = () => {
       )}
     </div>
   );
+};
+BreedsCard.propTypes = {
+  limit: PropTypes.number,
 };
 
 export default BreedsCard;
