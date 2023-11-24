@@ -14,7 +14,13 @@ const BreedsBanner = () => {
         </div>
         <div className="rectangulo-diseño"></div>
       </div>
-      <BreedsCard limit={4} />
+      <BreedsCard
+        limit={4}
+        justifyCon={"center"}
+        marginT={"-350px"}
+        width={"220px"}
+        height={"200px"}
+      />
     </div>
   );
 };
