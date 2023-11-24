@@ -14,7 +14,7 @@ const BreedsCard = ({ limit }) => {
     } catch (error) {
       console.error("Error fetching cat breed data: ", error);
     }
-  }, []);
+  }, [limit]);
 
   useEffect(() => {
     fetchBreedData();
