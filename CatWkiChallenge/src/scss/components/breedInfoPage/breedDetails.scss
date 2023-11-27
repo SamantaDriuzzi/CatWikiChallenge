@@ -1,0 +1,18 @@
+.details-container {
+  display: flex;
+  flex-direction: column;
+  width: 610px;
+
+  .detailsTitle {
+    color: #000;
+    font-family: Montserrat;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+
+    span {
+      font-weight: 500;
+    }
+  }
+}
