@@ -22,9 +22,13 @@ export const ImageCard = styled.div`
   width: ${(props) => props.width};
   height: ${(props) => props.height};
   margin: ${(props) => props.margin};
+
   ${css`
     border-radius: 24px;
     overflow: hidden;
+    display: flex; /* Utilizar flexbox */
+    justify-content: center; /* Centrar horizontalmente */
+    align-items: center;
     img {
       width: 100%;
       height: 100%;

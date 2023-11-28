@@ -3,7 +3,6 @@ import { useParams } from "react-router-dom";
 import axios from "axios";
 import {
   BreedDatailsContainer,
-  ContainerBreedsCard,
   ImageCard,
   RectanguloDiseñoCarDetails,
 } from "../../styledComponent/styled-breedCard";
