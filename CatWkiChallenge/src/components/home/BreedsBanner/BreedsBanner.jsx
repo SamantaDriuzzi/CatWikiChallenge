@@ -1,4 +1,5 @@
 import "../../../scss/components/home/BreedsBanner/BreedsBanner.scss";
+import { RectanguloDiseñoCard } from "../../../styledComponent/styled-breedCard";
 import BreedsCard from "./BreedsCard";
 
 const BreedsBanner = () => {
@@ -12,12 +13,11 @@ const BreedsBanner = () => {
           SEE MORE
           <span className="material-symbols-outlined">trending_flat</span>
         </div>
-        <div className="rectangulo-diseño"></div>
+        <RectanguloDiseñoCard></RectanguloDiseñoCard>
       </div>
       <BreedsCard
         limit={4}
-        justifyCon={"center"}
-        marginT={"-350px"}
+        margin={"-350 0 0 0"}
         width={"220px"}
         height={"200px"}
       />

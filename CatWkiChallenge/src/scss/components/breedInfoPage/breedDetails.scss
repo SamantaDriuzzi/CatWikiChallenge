@@ -1,0 +1,42 @@
+.details-container {
+  display: flex;
+  flex-direction: column;
+  width: 610px;
+
+  .detailsTitle {
+    color: #000;
+    font-family: Montserrat;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+
+    span {
+      font-weight: 500;
+    }
+  }
+  .bars-container {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    justify-content: space-between;
+    width: 500px;
+
+    .bars {
+      display: flex;
+      .bar {
+        width: 60px;
+        height: 12px;
+        flex-shrink: 0;
+        border-radius: 8px;
+        margin-right: 5px;
+        &.filled {
+          background-color: #544439;
+        }
+        &.empty {
+          background-color: #e0e0e0;
+        }
+      }
+    }
+  }
+}
