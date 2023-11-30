@@ -58,7 +58,7 @@ const BreedInfoPage = () => {
       </BreedDatailsContainer>
       <OtherPhotosSection>
         <h1>Other Photos</h1>
-        <OtherPhotos breedsId={breedImageDetails.breeds[0].id} />
+        <OtherPhotos breedsId={breedImageDetails.breeds[0].id} limit={8} />
       </OtherPhotosSection>
       <FooterCat />
     </InfoPageContainer>

@@ -10,6 +10,9 @@ export const ContainerBreedsCard = styled.div`
   gap: 16px;
   max-width: 1100px;
   padding: 20px 10px;
+  a {
+    text-decoration: none;
+  }
 `;
 
 export const ImageCard = styled.div`

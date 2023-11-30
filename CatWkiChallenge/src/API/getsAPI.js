@@ -29,6 +29,8 @@ export const getImagesByBreeds = () => {
   return axiosInstance.get(`/v1/images/:image_id/breeds`);
 };
 
-export const getImagesByGroup = (breedsId) => {
-  return axiosInstance.get(`/v1/images/search?limit=8&breed_ids=${breedsId}`);
+export const getImagesByGroup = (breedsId, limit) => {
+  return axiosInstance.get(
+    `/v1/images/search?limit=${limit}&breed_ids=${breedsId}`
+  );
 };
