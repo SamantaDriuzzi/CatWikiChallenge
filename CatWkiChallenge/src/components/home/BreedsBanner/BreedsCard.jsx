@@ -1,6 +1,6 @@
 import { useState, useEffect, useCallback } from "react";
 
-import { getImagesByLimit } from "../../../API/searchBreeds";
+import { getImagesByLimit } from "../../../API/getsAPI";
 import { Link } from "react-router-dom";
 import PropTypes from "prop-types";
 import {
@@ -9,7 +9,7 @@ import {
   TextCard,
 } from "../../../styledComponent/styled-breedCard";
 
-const BreedsCard = ({ limit, width, height, margin }) => {
+const BreedsCard = ({ limit, width, height }) => {
   const [breedImage, setBreedImage] = useState(null);
 
   const fetchBreedData = useCallback(async () => {
@@ -31,12 +31,7 @@ const BreedsCard = ({ limit, width, height, margin }) => {
         breedImage.map((breed, index) => (
           <div key={index}>
             <Link to={`/breedInfoPage/${breed.id}`}>
-              <ImageCard
-                width={width}
-                height={height}
-                margin={margin}
-                className="imageCard"
-              >
+              <ImageCard width={width} height={height} className="imageCard">
                 <img
                   src={breed.url}
                   alt={breed.breeds[0].name}
@@ -60,7 +55,6 @@ BreedsCard.propTypes = {
   limit: PropTypes.number,
   width: PropTypes.string,
   height: PropTypes.string,
-  margin: PropTypes.string,
 };
 
 export default BreedsCard;

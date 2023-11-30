@@ -17,7 +17,6 @@ const BreedsBanner = () => {
       </div>
       <BreedsCard
         limit={4}
-        margin={"-350 0 0 0"}
         width={"220px"}
         height={"200px"}
       />
