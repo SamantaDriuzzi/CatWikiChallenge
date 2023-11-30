@@ -23,6 +23,11 @@
         padding: 8px;
         background-color: #f0f0f0;
         border-color: transparent;
+
+        &:focus {
+          outline: none;
+          border-color: transparent;
+        }
       }
     }
 
@@ -40,11 +45,16 @@
         cursor: pointer;
         padding: 8px;
         transition: background-color 0.3s ease;
+        text-decoration: none;
 
         &:hover {
           background-color: #f0f0f0;
         }
       }
+    }
+    .breed-list a {
+      text-decoration: none; /* Elimina la línea subrayada de los enlaces */
+      color: inherit; /* Para mantener el color predeterminado del texto */
     }
   }
 }

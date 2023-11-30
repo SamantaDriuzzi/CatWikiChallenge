@@ -36,6 +36,7 @@ function BreedSearchComponent() {
             value={searchValue}
             onChange={(e) => setSearchValue(e.target.value)}
             className="search-input"
+            autoComplete="off"
           />
           <span className="material-symbols-outlined">search</span>
         </div>

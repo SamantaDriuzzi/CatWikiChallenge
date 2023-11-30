@@ -6,17 +6,17 @@ import {
 } from "../../styledComponent/styledInfoPage";
 import PropTypes from "prop-types";
 
-const OtherPhotos = ({ breedsId }) => {
+const OtherPhotos = ({ breedsId, limit }) => {
   const [photos, setPhotos] = useState([]);
 
   const fetchOtherPhotos = useCallback(async () => {
     try {
-      const response = await getImagesByGroup(breedsId);
+      const response = await getImagesByGroup(breedsId, limit);
       setPhotos(response.data);
     } catch (error) {
       console.error("Error fetching cat photo data: ", error);
     }
-  }, [breedsId]);
+  }, [breedsId, limit]);
 
   useEffect(() => {
     fetchOtherPhotos();
@@ -40,5 +40,6 @@ const OtherPhotos = ({ breedsId }) => {
 };
 OtherPhotos.propTypes = {
   breedsId: PropTypes.string,
+  limit: PropTypes.number,
 };
 export default OtherPhotos;
