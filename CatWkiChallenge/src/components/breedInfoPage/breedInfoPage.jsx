@@ -3,11 +3,17 @@ import { useParams } from "react-router-dom";
 import axios from "axios";
 import {
   BreedDatailsContainer,
-  ImageCard,
+  ImageCardInfo,
   RectanguloDiseñoCarDetails,
-} from "../../styledComponent/styled-breedCard";
+} from "../../styledComponent/styledInfoPage.js";
 import LogoSVG from "../../assets/LogoSVG";
 import BreedDetails from "./breedDetails";
+import OtherPhotos from "./otherPhotos";
+import FooterCat from "../home/FooterCat/FooterCat.jsx";
+import {
+  InfoPageContainer,
+  OtherPhotosSection,
+} from "../../styledComponent/styledInfoPage.js";
 
 const BreedInfoPage = () => {
   const { breedId } = useParams();
@@ -28,6 +34,7 @@ const BreedInfoPage = () => {
   }, [breedId]);
 
   useEffect(() => {
+    document.cookie = "_hjSessionUser_3476263=value; SameSite=None; Secure";
     fetchBreedDetails();
   }, [fetchBreedDetails]);
 
@@ -36,26 +43,25 @@ const BreedInfoPage = () => {
   }
 
   return (
-    <div>
+    <InfoPageContainer>
       <LogoSVG fill={"#000000"} width={130} />
       <BreedDatailsContainer>
-        <RectanguloDiseñoCarDetails></RectanguloDiseñoCarDetails>
-        <ImageCard
-          width={"317px"}
-          height={"371px"}
-          margin={"-10px 0 0 -100px"}
-          className="imageCard"
-        >
+        <ImageCardInfo>
+          <RectanguloDiseñoCarDetails></RectanguloDiseñoCarDetails>
           <img
             src={breedImageDetails.url}
             alt={breedImageDetails.breeds[0].name}
             className="image"
           />
-        </ImageCard>
-
+        </ImageCardInfo>
         <BreedDetails data={breedImageDetails.breeds[0]} />
       </BreedDatailsContainer>
-    </div>
+      <OtherPhotosSection>
+        <h1>Other Photos</h1>
+        <OtherPhotos breedsId={breedImageDetails.breeds[0].id} />
+      </OtherPhotosSection>
+      <FooterCat />
+    </InfoPageContainer>
   );
 };
 

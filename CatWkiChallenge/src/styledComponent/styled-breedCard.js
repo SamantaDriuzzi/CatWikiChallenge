@@ -1,14 +1,8 @@
 import styled, { css } from "styled-components";
 
-export const BreedDatailsContainer = styled.div`
-  display: flex;
-  padding: 0 100px;
-  gap: 50px;
-`;
-
 export const ContainerBreedsCard = styled.div`
   justify-content: center;
-  margin-top: -350px;
+
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
@@ -21,14 +15,12 @@ export const ContainerBreedsCard = styled.div`
 export const ImageCard = styled.div`
   width: ${(props) => props.width};
   height: ${(props) => props.height};
-  margin: ${(props) => props.margin};
 
   ${css`
+    margin-top: -350px;
     border-radius: 24px;
     overflow: hidden;
-    display: flex; /* Utilizar flexbox */
-    justify-content: center; /* Centrar horizontalmente */
-    align-items: center;
+
     img {
       width: 100%;
       height: 100%;
@@ -50,11 +42,4 @@ export const RectanguloDiseñoCard = styled.div`
   border-radius: 14px;
   background: #ac7f0d;
   margin: 60px 0 0 150px;
-`;
-export const RectanguloDiseñoCarDetails = styled.div`
-  width: 83px;
-  height: 305px;
-  border-radius: 14px;
-  background: #ac7f0d;
-  margin-top: 20px;
 `;

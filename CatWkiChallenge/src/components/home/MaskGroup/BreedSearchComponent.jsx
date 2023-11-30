@@ -1,6 +1,6 @@
 import { useState, useEffect, useCallback } from "react";
 import "../../../scss/components/home/MaskGroup/BreedSearchComponent.scss";
-import { getRazas } from "../../../API/searchBreeds";
+import { getRazas } from "../../../API/getsAPI.js";
 import { Link } from "react-router-dom";
 
 function BreedSearchComponent() {
@@ -42,7 +42,7 @@ function BreedSearchComponent() {
         <ul className="breed-list">
           {breeds.map((breed) => (
             <li key={breed.id}>
-              <Link to={`/breedInfoPage/${breed.id}`}>{breed.name}</Link>
+              <Link to={`/breedInfoPage/${breed.image.id}`}>{breed.name}</Link>
             </li>
           ))}
         </ul>
