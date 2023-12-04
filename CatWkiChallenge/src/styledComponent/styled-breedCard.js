@@ -8,6 +8,7 @@ export const ContainerBreedsCard = styled.div`
   flex-wrap: wrap;
   align-items: center;
   gap: 16px;
+  margin-bottom: 10px;
   max-width: 1100px;
   padding: 20px 10px;
   a {
@@ -20,7 +21,6 @@ export const ImageCard = styled.div`
   height: ${(props) => props.height};
 
   ${css`
-    margin-top: -350px;
     border-radius: 24px;
     overflow: hidden;
 
@@ -28,6 +28,12 @@ export const ImageCard = styled.div`
       width: 100%;
       height: 100%;
       object-fit: cover;
+    }
+    img:hover {
+      transform: scale(1.1) rotate(5deg);
+      transition: transform 0.5s ease;
+      cursor: pointer;
+      filter: saturate(150%);
     }
   `}
 `;
@@ -44,5 +50,5 @@ export const RectanguloDiseñoCard = styled.div`
   height: 174px;
   border-radius: 14px;
   background: #ac7f0d;
-  margin: 60px 0 0 150px;
+  margin: 60px 0 0 100px;
 `;

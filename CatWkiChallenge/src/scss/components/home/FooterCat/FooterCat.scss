@@ -2,6 +2,9 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  align-content: flex-end;
+  flex-wrap: wrap;
+  margin-top: auto;
 
   .footer-banner {
     width: 1248px;
