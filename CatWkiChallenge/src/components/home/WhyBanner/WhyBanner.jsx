@@ -2,6 +2,7 @@ import "../../../scss/components/home/WhyBanner/WhyBanner.scss";
 import image1 from "../../../assets/image1.jpg";
 import image2 from "../../../assets/image2.jpg";
 import image3 from "../../../assets/image3.jpg";
+import { Link } from "react-router-dom";
 const WhyBanner = () => {
   return (
     <div className="container-why-banner">
@@ -13,10 +14,12 @@ const WhyBanner = () => {
             Having a cat around you can actually trigger the release of calming
             chemicals in your body which lower your stress and anxiety leves
           </div>
-          <div className="text-read-more">
-            READ MORE
-            <span className="material-symbols-outlined">trending_flat</span>
-          </div>
+          <Link to={`/whyPage/`}>
+            <div className="text-read-more">
+              READ MORE
+              <span className="material-symbols-outlined">trending_flat</span>
+            </div>
+          </Link>
         </div>
 
         <div className="images-why-banner">

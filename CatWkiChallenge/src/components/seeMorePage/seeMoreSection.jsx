@@ -8,6 +8,7 @@ import BreedsCard from "../home/BreedsBanner/BreedsCard";
 import FooterCat from "../home/FooterCat/FooterCat";
 
 const SeeMorePage = () => {
+  window.scrollTo(0, 0);
   return (
     <MainContainer>
       <LogoSVG fill={"#000000"} width={130} />

@@ -34,3 +34,6 @@ export const getImagesByGroup = (breedsId, limit) => {
     `/v1/images/search?limit=${limit}&breed_ids=${breedsId}`
   );
 };
+export const getImagesRandom = (limit) => {
+  return axiosInstance.get(`/v1/images/search?limit=${limit}&order=RANDOM`);
+};
